@@ -1,17 +1,112 @@
 <!DOCTYPE html>
 <html>
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ToDo</title>
-    <link rel="stylesheet" href="style.css">
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="index.css">
+  <title>Mateusz Nowak</title>
 </head>
-
-
 <body>
-    <script src="mine.js"></script>
-</body>
+  <span>
+    <i class="fas fa-arrow-down "></i>
+  </span>
 
+  <aside>
+    <nav>
+      <ul>
+        <li><a href="#" class='mine'>O mnie</a></li>
+        <li><a href="#" class='technology'>Technologie</a></li>
+        <li><a href="#" class=portfolio>Portfolio</a></li>
+        <li><a href="#" class='contact'>Kontakt </a></li>
+      </ul>
+    </nav>
+  </aside>
+
+  
+  <div id='titleSite'>
+    <div id='introduction'>
+      <h1>Witam!</h1>
+      <h2>Jestem Mateusz</h2>
+    </div>
+  </div>
+    
+<div id='mine'>
+    <div class='aboutMe'>  
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat saepe minus praesentium itaque tempora at, sunt facilis quisquam velit mollitia pariatur consectetur maxime a placeat. Debitis dolorum porro a eveniet veniam accusamus mollitia, earum vel. Quaerat consequuntur pariatur, dolor eligendi. Consequuntur iusto odit vero hic sapiente accusamus repellat necessitatibus deleniti!</p>
+    </div>
+    <div class="image">
+      <img src="my_photo.jpg">
+    </div>
+  </div>
+
+
+  <div id='technology'>
+
+    <h2>Technologie których się uczę</h2>
+    <div class=technologyWrap>  
+      <div>
+        <i class="fab fa-html5" title="HTML"></i>
+        <p>HTML</p>
+      </div>
+      
+      <div>
+        <i class="fab fa-css3-alt" title="CSS"></i>
+        <p>CSS</p>
+      </div>
+      
+      <div>
+        <i class="fab fa-js-square" titel="JavaScrip"></i>
+        <p>JavaScrip</p>
+      </div>
+    </div>
+  </div>
+  
+  <div id='portfolio'>
+    
+    <h2>Moje prace stworzone podczas nauki</h2>
+
+  <div class='protfolioWrap'>
+      
+      <div class="project">
+        <div class='etykieta'> 
+          <i class="fab fa-github"></i>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </div>
+
+      <div class="project">
+        <div class='etykieta'> 
+          <i class="fab fa-github"></i>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </div>
+    
+      <div class="project">
+       <div class='etykieta'> 
+          <i class="fab fa-github"></i>
+          <i class="fas fa-arrow-right"></i>
+        </div>
+      </div>
+    
+    
+  </div>
+  
+  <div id='contact'>
+      <h2>Kontakt</h2>
+      <p><i class="fas fa-phone"></i>Tel. 123 123 123</p>
+      <p><i class="fab fa-facebook"></i>Mateusz Nowak</p>
+      <p><i class="fas fa-at"></i>simple@yellow.com</p>
+
+  </div>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+
+
+  <script type="text/javascript" src='index.js'>  </script>
+
+</body>
 </html>
