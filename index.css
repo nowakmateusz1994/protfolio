@@ -1,62 +1,63 @@
-*{
-  margin:0;
-  padding:0;
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
-span{
+span {
   position: fixed;
   border: 2px solid black;
   font-size: 25px;
   line-height: 30px;
   width: 30px;
   height: 30px;
-  border-radius:50%;
-  text-align:center;
+  border-radius: 50%;
+  text-align: center;
   line-height: 30px;
   top: 20px;
   right: 20px;
   transition: .5s;
   z-index: 1;
-} 
+}
 
-span:hover{
+span:hover {
   color: #333;
 }
 
 
-body{
+body {
   width: 100vw;
   background: yellow;
   transition: .5s;
   background: aqua;
 }
+
 /* ======NAV======*/
-aside{
-  height:45vh;
-  position:fixed;
-  left:0;
-  right:0;
-  top:-45vh;
+aside {
+  height: 45vh;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: -45vh;
   background: #000;
-  transition:.5s;
+  transition: .5s;
   border-bottom: 2px solid rgba(255, 255, 255, .3);
   z-index: 1;
 }
 
-nav{
+nav {
   height: 100%;
-  background-image: linear-gradient(to bottom, green, lime );
+  background-image: linear-gradient(to bottom, green, lime);
 }
 
-nav ul{
+nav ul {
   display: block;
   height: 100%;
 
 }
 
 
-nav ul li{
+nav ul li {
   list-style: none;
   display: block;
   width: 100%;
@@ -71,17 +72,17 @@ nav ul li{
   transition: .5s;
 }
 
-i{
+i {
   transition: 1s;
 }
 
-li a{
+li a {
   text-decoration: none;
   color: black;
 
 }
 
-li a{
+li a {
   cursor: pointer;
 }
 
@@ -89,47 +90,43 @@ li a{
 
 /*=====Menu Animation ====== */
 
-i.active{
+i.active {
   transform: rotate(180deg);
 }
 
-aside.active{
-  top:0;
+aside.active {
+  top: 0;
 }
 
-span.active{
-  top:50vh;
+span.active {
+  top: 50vh;
 }
 
-body.active{
-  margin-top: 45vh;
-}
-
-li:hover{
+li:hover {
   background: rgba(0, 0, 0, .3);
 }
 
 
 /* ======DIV SECTION======*/
 
-div{
+div {
   width: 100%;
   padding-top: 16px;
 }
 
-p{
+p {
   margin: 15px;
 }
 
 /* ======TITLE SECTIOn======*/
 
-#titleSite{
+#titleSite {
   width: 100vw;
   height: 100vh;
   background-image: url(titleSite.jpg);
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; 
+  background-size: cover;
   background-attachment: fixed;
   display: flex;
   align-items: center;
@@ -148,31 +145,34 @@ p{
 
 }
 
-#introduction h1, #introduction h2{
+#introduction h1,
+#introduction h2 {
   flex: 0 0 100%;
 
 }
+
 /* ======DIV mine======*/
-  
-h1 , h2{
+
+h1,
+h2 {
   text-align: center;
   font-family: arial;
   line-height: 3rem;
 }
 
-div#mine p{
+div#mine p {
   line-height: 2rem;
-  text-align:center;
+  text-align: center;
   font-size: 1.3rem;
   letter-spacing: 1px;
 }
 
-.image{
+.image {
   width: 100%;
 }
 
 
-div#mine img{
+div#mine img {
   width: 70%;
   height: auto;
   display: block;
@@ -185,14 +185,14 @@ div#mine img{
 /* ======DIV technology======*/
 
 
-div#technology i{
+div#technology i {
   display: block;
   color: #DD4B25;
   text-align: center;
   font-size: 80vw;
 }
 
-div#technology p{
+div#technology p {
   line-height: 2.5rem;
   text-align: center;
   font-size: 1.3rem;
@@ -203,36 +203,36 @@ div#technology p{
   width: 70vw;
   height: 2.5rem;
   background: rgba(0, 0, 0, .7);
-  margin: .5rem auto ;
+  margin: .5rem auto;
   border-radius: 30px;
 }
 
-div#technology .fa-css3-alt{
+div#technology .fa-css3-alt {
   color: #264DE4;
 }
 
-div#technology .fa-js-square{
+div#technology .fa-js-square {
   color: #F0DB4F;
 }
 
 /* ======DIV protfolio======*/
 
-#portfolio .protfolioWrap .project{
+#portfolio .protfolioWrap .project {
   height: 90vw;
   width: 90vw;
   border-radius: 25px;
   background: red;
   margin: 1rem auto;
-  position: relative;  
+  position: relative;
 
 }
 
-#portfolio .protfolioWrap .project .etykieta{
+#portfolio .protfolioWrap .project .etykieta {
   position: absolute;
   left: 0;
   bottom: 0;
   background: rgba(255, 255, 255, .0);
-  color:transparent;
+  color: transparent;
   height: 50%;
   width: 100%;
   margin: 0;
@@ -242,9 +242,9 @@ div#technology .fa-js-square{
 #portfolio .protfolioWrap .project:hover .etykieta {
   background: rgba(255, 255, 255, .5);
   color: black;
-} 
+}
 
-.etykieta i{
+.etykieta i {
   text-align: center;
   display: block;
   font-size: 3rem;
@@ -252,30 +252,37 @@ div#technology .fa-js-square{
   transition: .3s;
 }
 
-.etykieta i:hover{
+.etykieta i:hover {
   color: red;
 }
 
 /*===== CONTACT =====*/
 
-#contact i, #contact p{
+#contact i,
+#contact a {
+  color: black;
   font-size: 1.5rem;
   letter-spacing: 2px;
   line-height: 2.5rem;
 }
 
-#contact i{
+#contact i {
 
   display: inline-block;
   margin-right: 1rem;
-  transition:.3s;
+  transition: .3s;
 }
 
-#contact i:hover{
+#contact a {
+  text-decoration: none;
+  display: block;
+}
+
+#contact i:hover {
   color: indigo;
 }
 
-#contact i::after{
+#contact i::after {
   content: "";
   display: inline-block;
   height: 1rem;
@@ -285,137 +292,140 @@ div#technology .fa-js-square{
 }
 
 @media (min-width:720px) {
+
   /*----Menu----*/
-    span{
-      display: none;
-    }
+  span {
+    display: none;
+  }
 
-    aside{
-      top:0;
-      height: 10vh;
-    }
+  aside {
+    top: 0;
+    height: 10vh;
+  }
 
-    nav ul {
-      display: flex;
-      height: auto;
-    }
+  nav ul {
+    display: flex;
+    height: auto;
+  }
 
-    nav li{
-      flex: 1 1 25%;
-      line-height: 10vh;
-    }
+  nav li {
+    flex: 1 1 25%;
+    line-height: 10vh;
+  }
 
-    body{
-      margin-top:10vh;
-    }
+  body {
+    margin-top: 10vh;
+  }
 
- /*----TITLESITE----*/
-    #introduction{
-      width: 40vw;
-    }
+  /*----TITLESITE----*/
+  #introduction {
+    width: 40vw;
+  }
+
   /*----MINE----*/
-  div#mine{
+  div#mine {
     display: flex;
     justify-content: center;
     align-items: center;
   }
 
-  
-  div.aboutMe{    
-    flex: 1 0  300px;
+
+  div.aboutMe {
+    flex: 1 0 300px;
   }
 
-  .image{
-    flex: 4 0  420px;
+  .image {
+    flex: 4 0 420px;
     justify-content: center;
     display: flex;
     align-items: center;
   }
 
-  .image img{
+  .image img {
     justify-content: center;
   }
 
   /*==== technologie====*/
 
-    .technologyWrap{
-      width: 100vw;
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
+  .technologyWrap {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-    .technologyWrap div{
-      flex: 1 1 ;
+  .technologyWrap div {
+    flex: 1 1;
 
-    }
+  }
 
-   #technology .technologyWrap div i {
-      font-size: 30vw;
-    }
+  #technology .technologyWrap div i {
+    font-size: 30vw;
+  }
+
   #technology .technologyWrap div p {
-      width: 30vw;
-    }
+    width: 30vw;
+  }
 
-/*==== PORTFOLIO====*/
+  /*==== PORTFOLIO====*/
 
-#portfolio .protfolioWrap{
-  width: 100vw;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
+  #portfolio .protfolioWrap {
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
 
-#portfolio .protfolioWrap .project{
-  flex: 0 0 20vw;
-  height: 20vw;
-  background: lime;
-  overflow: hidden;
-  
-}  
+  #portfolio .protfolioWrap .project {
+    flex: 0 0 20vw;
+    height: 20vw;
+    background: lime;
+    overflow: hidden;
 
-#portfolio .protfolioWrap .project .etykieta{
-  text-align:center;
-  letter-spacing: 2vw;
-  height: 25vh;
-  line-height: 25vh;
+  }
 
-}
+  #portfolio .protfolioWrap .project .etykieta {
+    text-align: center;
+    letter-spacing: 2vw;
+    height: 25vh;
+    line-height: 25vh;
 
-#portfolio .protfolioWrap .project i{
-  font-size: 10vh;
-  display: inline-block;
+  }
 
-}
+  #portfolio .protfolioWrap .project i {
+    font-size: 10vh;
+    display: inline-block;
 
-/*=====Contect======= */
+  }
+
+  /*=====Contect======= */
 
   #contact {
-    text-align:center;
+    text-align: center;
   }
 
 }
 
 @media (min-width:1023px) {
-  
-  div#mine{
+
+  div#mine {
     display: flex;
-    
+
   }
 
-  
-  div.aboutMe{    
-    flex: 0 0  500px;
+
+  div.aboutMe {
+    flex: 0 0 500px;
   }
 
-  .image{
+  .image {
     align-items: center;
-    flex: 2 1 ;
+    flex: 2 1;
     justify-content: center;
     display: flex;
   }
 
-  .image img{
+  .image img {
     justify-content: center;
   }
 
