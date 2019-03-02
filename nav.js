@@ -12,26 +12,13 @@ btn.addEventListener('click', function () {
 
 });
 
-const goTo = (e) => {
-  const scrollToDiv = e.target.dataset.key;
-  howFar = document.querySelector(`#${scrollToDiv}`).offsetTop;
+function scroll(e) {
 
-  setTimeout(scrollWindow, 1);
-}
+  var href = $(this).attr('href');
+  e.preventDefault();
+  $('html, body').animate({
+    scrollTop: $(href).offset().top
+  }, 800);
+};
 
-const scrollWindow = () => {
-
-  let scrollPosition = window.scrollY;
-  if (scrollPosition != howFar)
-    if (scrollPosition > howFar) {
-      scrollPosition -= 10;
-      window.scrollTo(0, scrollPosition);
-      setTimeout(scrollWindow, 1);
-    } else {
-      scrollPosition += 10;
-      window.scrollTo(0, scrollPosition);
-      setTimeout(scrollWindow, 1);
-    }
-}
-
-li.forEach(element => element.addEventListener('click', goTo));
+$('a[href*="#"]').click(scroll);
