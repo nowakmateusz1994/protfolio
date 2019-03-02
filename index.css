@@ -26,8 +26,8 @@ span:hover {
 
 
 body {
-  width: 100vw;
-  background: yellow;
+  width: 100%;
+  overflow-x: hidden;
   transition: .5s;
   background: aqua;
 }
