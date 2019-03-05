@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 span {
   position: fixed;
   border: 2px solid black;
@@ -64,6 +65,7 @@ nav ul li {
   height: 25%;
   font-weight: 700;
   background: transparent;
+  border-radius: 15px;
   font-size: 2rem;
   text-align: center;
   display: flex;
@@ -112,6 +114,7 @@ li:hover {
 div {
   width: 100%;
   padding-top: 16px;
+  transition: 1s;
 }
 
 p {
@@ -134,30 +137,28 @@ p {
 }
 
 #introduction {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  width: 90vw;
-  height: 25vh;
+  width: 90%;
+  height: calc(2*3rem + 64px + 16px);
   background-color: rgba(255, 255, 255, .5);
   border-radius: 15px;
 
 }
 
-#introduction h1,
-#introduction h2 {
-  flex: 0 0 100%;
-
+#introduction h1 {
+  text-shadow: 0px 0px 5px linear-gradient(pink, yellow);
 }
 
 /* ======DIV mine======*/
+div#mine {
+  opacity: 0;
+}
 
 h1,
 h2 {
   text-align: center;
   font-family: arial;
   line-height: 3rem;
+  margin-top: 32px;
 }
 
 div#mine p {
@@ -183,7 +184,9 @@ div#mine img {
 
 
 /* ======DIV technology======*/
-
+#technology {
+  opacity: 0;
+}
 
 div#technology i {
   display: block;
@@ -216,6 +219,10 @@ div#technology .fa-js-square {
 }
 
 /* ======DIV protfolio======*/
+#portfolio {
+  opacity: 0;
+}
+
 
 #portfolio .protfolioWrap .project {
   height: 90vw;
@@ -264,6 +271,7 @@ div#technology .fa-js-square {
   font-size: 1.5rem;
   letter-spacing: 2px;
   line-height: 2.5rem;
+  text-align: center;
 }
 
 #contact i {
@@ -282,44 +290,10 @@ div#technology .fa-js-square {
   color: indigo;
 }
 
-#contact i::after {
-  content: "";
-  display: inline-block;
-  height: 1rem;
-  width: 2px;
-  background: #000;
-  margin-left: .5rem;
-}
 
-@media (min-width:720px) {
-
-  /*----Menu----*/
-  span {
-    display: none;
-  }
-
-  aside {
-    top: 0;
-    height: 10vh;
-  }
-
-  nav ul {
-    display: flex;
-    height: auto;
-  }
-
-  nav li {
-    flex: 1 1 25%;
-    line-height: 10vh;
-  }
-
-  body {
-    margin-top: 10vh;
-  }
-
-  /*----TITLESITE----*/
+@media (orientation: landscape) {
   #introduction {
-    width: 40vw;
+    width: 60%;
   }
 
   /*----MINE----*/
@@ -343,6 +317,8 @@ div#technology .fa-js-square {
 
   .image img {
     justify-content: center;
+    flex-basis: 50%;
+
   }
 
   /*==== technologie====*/
@@ -368,6 +344,9 @@ div#technology .fa-js-square {
   }
 
   /*==== PORTFOLIO====*/
+  #portfolio {
+    opacity: 0;
+  }
 
   #portfolio .protfolioWrap {
     width: 100vw;
@@ -402,6 +381,52 @@ div#technology .fa-js-square {
 
   #contact {
     text-align: center;
+  }
+
+
+}
+
+@media (min-width:720px) {
+
+  /*----Menu----*/
+  span {
+    display: none;
+  }
+
+  aside {
+    top: 0;
+    height: 10vh;
+  }
+
+  nav ul {
+    display: flex;
+    height: auto;
+  }
+
+  nav li {
+    flex: 1 1 25%;
+    line-height: 10vh;
+  }
+
+  body {
+    margin-top: 10vh;
+  }
+
+  /*----TITLESITE----*/
+  #introduction {
+    width: 50%;
+    height: 7rem;
+  }
+
+  #introduction h1 {
+    margin: 0;
+  }
+
+  #introduction h2 {
+    height: 2rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 0;
   }
 
 }
