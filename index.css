@@ -30,7 +30,7 @@ body {
   width: 100%;
   overflow-x: hidden;
   transition: .5s;
-  background: aqua;
+  background-image: linear-gradient(90deg, #29989c, #295f9c, #29989c);
 }
 
 /* ======NAV======*/
@@ -124,7 +124,7 @@ p {
 /* ======TITLE SECTIOn======*/
 
 #titleSite {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
   background-image: url(titleSite.jpg);
   background-position: center;
@@ -169,15 +169,15 @@ div#mine p {
 }
 
 .image {
-  width: 100%;
+  width: 50%;
+  margin: 0 auto;
 }
 
 
 div#mine img {
   width: 70%;
-  height: auto;
-  display: block;
   margin: 0 auto;
+  display: block;
   border-radius: 15px;
 }
 
@@ -297,29 +297,23 @@ div#technology .fa-js-square {
   }
 
   /*----MINE----*/
-  div#mine {
+  div#mineWrap {
     display: flex;
-    justify-content: center;
-    align-items: center;
   }
 
 
-  div.aboutMe {
-    flex: 1 0 300px;
+  div#mineWrap div.aboutMe {
+    flex-basis: 45%;
   }
 
-  .image {
-    flex: 4 0 420px;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-  }
-
-  .image img {
-    justify-content: center;
+  div#mineWrap .image {
     flex-basis: 50%;
+    align-self: center;
 
   }
+
+
+
 
   /*==== technologie====*/
 
@@ -356,8 +350,8 @@ div#technology .fa-js-square {
   }
 
   #portfolio .protfolioWrap .project {
-    flex: 0 0 20vw;
-    height: 20vw;
+    flex: 0 0 35vw;
+    height: 35vw;
     background: lime;
     overflow: hidden;
 
@@ -429,30 +423,38 @@ div#technology .fa-js-square {
     margin: 0;
   }
 
+  #portfolio .protfolioWrap .project {
+    flex: 0 0 25vw;
+    height: 25vw;
+    background: lime;
+    overflow: hidden;
+
+  }
+
 }
 
 @media (min-width:1023px) {
 
   div#mine {
     display: flex;
-
   }
 
 
   div.aboutMe {
-    flex: 0 0 500px;
+    flex: 0 0 30%;
   }
 
   .image {
-    align-items: center;
-    flex: 2 1;
-    justify-content: center;
-    display: flex;
-  }
-
-  .image img {
-    justify-content: center;
+    flex: 0 0 70%;
   }
 
 
+
+  #portfolio .protfolioWrap .project {
+    flex: 0 0 20vw;
+    height: 20vw;
+    background: lime;
+    overflow: hidden;
+
+  }
 }
